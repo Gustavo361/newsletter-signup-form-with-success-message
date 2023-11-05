@@ -193,7 +193,10 @@ article div section:nth-child(2) form button:hover {
         display: none;
     } */
 
-    /* article div section:nth-child(1) h1 {} */
+    article div section:nth-child(1) h1 {
+        /* background-color: red; */
+        font-size: clamp(40px, 5vw, 46px);
+    }
 
     article div section:nth-child(1) p {
         font-size: 17px;
