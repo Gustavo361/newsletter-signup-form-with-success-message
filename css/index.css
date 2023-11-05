@@ -39,8 +39,8 @@ article header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
 }
 
 body article header svg {
