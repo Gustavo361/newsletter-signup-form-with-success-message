@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* @font-face {
+    font-family: 'Roboto-Bold';
+    src: url(./fonts/Roboto-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(./fonts/Roboto-Regular.ttf) format('truetype');
+} */
+
+body {
+    background-color: #36384D;
+    font-family: 'Poppins', sans-serif;
+}
+
+body article {
+    background-color: white;
+    padding: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* body > article {
+} */
+
+article header {
+    height: 40vh;
+    width: 100%;
+    background-image: url('../images/illustration-sign-up-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+body article header svg {
+    width: 100%;
+}
+
+/* body article>div {
+} */
+
+body article div section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-bottom: 14px;
+}
+
+body article div section h1 {
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-top: 8%;
+    font-size: clamp(40px, 50px, 100%);
+}
+
+body article div section p {
+    margin-top: 14px;
+    margin-bottom: 14px;
+    font-size: 0px;
+}
+
+body article div section ul {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+
+body article div section ul li {
+    list-style: none;
+    display: flex;
+}
+
+body article div section ul li svg {
+    margin-right: 12px;
+}
+
+/* article div section:nth-child(1) {} */
+
+article div section:nth-child(2) form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+article div section:nth-child(2) form #form-labels label {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+article div section:nth-child(2) form #form-labels {
+    display: flex;
+    justify-content: space-between;
+}
+
+article div section:nth-child(2) form label#error-message {
+    color: hsl(4, 100%, 67%);
+    display: none;
+}
+
+article div section:nth-child(2) form label#error-message.active {
+    display: block;
+}
+
+article div section:nth-child(2) form input {
+    line-height: 4;
+    padding-left: 3%;
+    border-radius: 8px;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    border: 1px solid grey;
+    font-weight: 600;
+}
+
+article div section:nth-child(2) form input:focus {
+    outline: hsl(4, 100%, 67%);
+}
+
+article div section:nth-child(2) form input.error-box {
+    border: 1px solid hsl(4, 100%, 67%);
+    background-color: #FFD9D3;
+    color: hsl(4, 100%, 67%);
+}
+
+article div section:nth-child(2) form button {
+    line-height: 4;
+    border-radius: 8px;
+    background-color: #36384D;
+    border: 1px solid transparent;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+article div section:nth-child(2) form button:hover {
+    background: linear-gradient(to right, #FF537B, #E87653);
+}
+
+@media(min-width:600px) {
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    body article {
+        padding: 1%;
+        border-radius: 12px;
+        max-width: 900px;
+        max-height: 500px;
+        display: flex;
+        flex-direction: row-reverse;
+        height: 100vh;
+
+    }
+
+    body article header {
+        height: initial;
+        width: 50%;
+        padding: 5%;
+        background-image: url('../images/illustration-sign-up-desktop.svg');
+        background-size: cover;
+        background-position: center;
+        border-radius: 12px;
+    }
+
+    article div {
+        padding: 0%;
+        padding-left: 3.4%;
+    }
+
+    /* article>section:nth-child(2) {
+        background-color: green;
+        padding: 0;
+        display: none;
+    } */
+
+    /* article div section:nth-child(1) h1 {} */
+
+    article div section:nth-child(1) p {
+        font-size: 17px;
+    }
+
+    article div section:nth-child(1) {
+        width: 100%;
+        padding: 0;
+        padding-right: 10%;
+        margin: 0;
+    }
+
+    article div section:nth-child(2) {
+        width: 100%;
+        padding: 0;
+        padding-right: 10%;
+        text-align: initial;
+    }
+
+    article div section:nth-child(2) form #form-labels {
+        padding-left: 0;
+    }
+
+    article div section:nth-child(2) form button {
+        line-height: 4;
+        padding: initial;
+    }
+}
