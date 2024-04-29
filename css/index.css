@@ -83,10 +83,13 @@ body article div section ul {
 body article div section ul li {
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
 body article div section ul li svg {
     margin-right: 12px;
+    width: 42px;
+    height: 42px;
 }
 
 /* article div section:nth-child(1) {} */
@@ -151,6 +154,10 @@ article div section:nth-child(2) form button:hover {
     background: linear-gradient(to right, #FF537B, #E87653);
 }
 
+body article div section ul li:last-child svg {
+    width: 32px;
+}
+
 @media(min-width:600px) {
     body {
         height: 100vh;
@@ -169,7 +176,6 @@ article div section:nth-child(2) form button:hover {
         display: flex;
         flex-direction: row-reverse;
         height: 100vh;
-
     }
 
     body article header {
@@ -185,16 +191,15 @@ article div section:nth-child(2) form button:hover {
     article div {
         padding: 0%;
         padding-left: 3.4%;
+        flex: 1;
     }
 
-    /* article>section:nth-child(2) {
-        background-color: green;
-        padding: 0;
-        display: none;
-    } */
+    body article div section ul li svg {
+        width: 32px;
+        height: 32px;
+    }
 
     article div section:nth-child(1) h1 {
-        /* background-color: red; */
         font-size: clamp(40px, 5vw, 46px);
     }
 
